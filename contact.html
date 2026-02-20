@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | PaperWallah</title>
+    <meta name="description" content="Get in touch with the PaperWallah team for support, material requests, or general inquiries.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        .contact-wrapper { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 40px; margin-bottom: 60px; }
+        .contact-info { background: var(--navy-blue); color: var(--beige-light); padding: 40px; border-radius: 10px; }
+        .contact-info h2 { color: var(--tan-accent); text-align: left; }
+        .contact-info p { margin-bottom: 20px; display: flex; align-items: center; gap: 10px; }
+        .contact-form { background: var(--white); padding: 40px; border-radius: 10px; box-shadow: var(--shadow); }
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; margin-bottom: 8px; font-weight: 600; }
+        .form-group input, .form-group textarea { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 5px; font-family: inherit; }
+        .form-group textarea { resize: vertical; height: 150px; }
+        
+        @media (max-width: 768px) {
+            .contact-wrapper { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container header-content">
+            <a href="index.html" class="logo">
+                <i data-lucide="book-open"></i> PaperWallah
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#subjects">12th PYQs</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <h2>Get in Touch</h2>
+                <p>Have a question about the study materials? Found a broken link? Or just want to say hi? We're here to help you ace your exams!</p>
+                
+                <div style="margin-top: 40px;">
+                    <p><i data-lucide="user"></i> Webmaster: SRKD LLC.</p>
+                    <p><i data-lucide="mail"></i> srkd1351@gmail.com</p>
+                    <p><i data-lucide="map-pin"></i> India</p>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <h2 style="text-align: left; color: var(--navy-blue); margin-top:0;">Send a Message</h2>
+                <form action="https://formspree.io/f/xbdaawjz" method="POST">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required placeholder="john@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required placeholder="How can we help you?"></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary" style="width: 100%; justify-content: center;">Send Message <i data-lucide="send"></i></button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="copyright">
+            <p>&copy; 2026 PaperWallah. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>lucide.createIcons();</script>
+</body>
+</html>
