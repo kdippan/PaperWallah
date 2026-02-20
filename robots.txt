@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Block legal pages from cluttering search results
+Disallow: /privacy.html
+Disallow: /terms.html
+Disallow: /disclaimer.html
+
+Sitemap: https://niospyqs.vercel.app/sitemap.xml
